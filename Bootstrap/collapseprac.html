@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of collapse</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        
+        .bg-light{
+            background-color: rgb(232, 232, 232) !important;
+            border-radius: 20px;
+           
+        }
+        #q1,#q2,#q3{
+            color: green;
+            transition: smooth;
+        }
+        .label{
+            color: red;
+            text-decoration: none;
+            font-size: 20px;
+            text-shadow: 0 0 1px green;
+            
+        }
+        .card-body{
+            box-shadow: 0 5px 10px  rgb(79, 145, 79) !important;
+        }
+    
+    </style>
+</head>
+<body>
+    <div style="margin: 50px;">
+        <!-- <div class="card-header bg-secondary">
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Show content</button>
+        </div>
+
+        <div class="collapse show card-body" id="demo">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident maxime magni non culpa labore fugit, reiciendis consectetur deleniti vel repellat eum earum, neque hic laboriosam quasi voluptatem, adipisci ducimus nemo molestiae in ipsum blanditiis quae? A ipsum voluptas repudiandae nisi omnis soluta distinctio, aliquam, vitae, inventore deleniti maiores nihil recusandae. Quae soluta quam molestiae asperiores vero unde minima quibusdam illum laudantium rerum provident explicabo, repudiandae perferendis, quod nemo nihil assumenda atque ea libero quisquam inventore. Illum, quo? Ratione animi reprehenderit, sapiente ullam saepe dolorem quas soluta dolores eum possimus officiis non! Deleniti officia explicabo iusto ad dolores exercitationem? Laboriosam, nemo!
+        </div>
+    </div> -->
+
+
+    <div id="accordion">
+        <div class="card p-4">
+            <div>
+                <a href="#q1" class="label" data-bs-toggle="collapse">Question 1</a>
+
+                <div class="collapse show card-body bg-light" id="q1" data-bs-parent="#accordion">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora deserunt facere est odio saepe? Distinctio quos eveniet sapiente ab facere quidem, vitae suscipit, beatae illo modi iusto hic? Dolores, voluptates.
+                </div>
+            </div>
+
+            <div>
+                <a href="#q2" class="label" data-bs-toggle="collapse">Question 2</a>
+
+                <div class="collapse card-body bg-light" id="q2" data-bs-parent="#accordion">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora deserunt facere est odio saepe? Distinctio quos eveniet sapiente ab facere quidem, vitae suscipit, beatae illo modi iusto hic? Dolores, voluptates.
+                </div>
+            </div>
+
+            <div>
+                <a href="#q3" class="label" data-bs-toggle="collapse">Question 3</a>
+
+                <div class="collapse card-body bg-light" id="q3" data-bs-parent="#accordion">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora deserunt facere est odio saepe? Distinctio quos eveniet sapiente ab facere quidem, vitae suscipit, beatae illo modi iusto hic? Dolores, voluptates.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of css Jquery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+
+    <button class="btn btn-primary" id="cssjq">Css Jquery</button>
+
+    <div class="box mt-3">
+        1
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#cssjq").click(function(){
+                $(".box").css({
+                    "background-color":"red",
+                    "margin-left":"150px",
+                    "opacity":"0.5",
+                    "font-size":"50px"
+                })
+            })
+        })
+    </script>
+</body>
+</html>

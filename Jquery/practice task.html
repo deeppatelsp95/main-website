@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice task</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+        #green{
+            background-color: green;
+            color: white;
+            
+        }
+        #orange{
+            background-color: orange;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body class="m-5">
+    <button class="btn btn-danger" id="red">Red</button>
+    <button class="btn" id="green">Green</button>
+    <button class="btn btn-primary" id="blue">Blue</button>
+    <button class="btn" id="orange">Orange</button>
+
+    <div class="box mt-3 ms-4 rounded-5">
+
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#red").click(function(){
+                $(".box").css("background-color","red")
+            })
+            $("#green").click(function(){
+                $(".box").css("background-color","green")
+            })
+            $("#blue").click(function(){
+                $(".box").css("background-color","blue")
+            })
+            $("#orange").click(function(){
+                $(".box").css("background-color","orange")
+            })
+        })
+    </script>
+</body>
+</html>

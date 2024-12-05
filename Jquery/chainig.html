@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Chaining Using JS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            width: 200px;height: 200px;background-color: red;
+        }
+        p{
+            
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+    <button class="btn btn-primary mb-3" id="chaining">Chaining</button>
+    <p>India is my country</p>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#chaining").click(function(){
+                $("p").css({"color":"red","fontSize":"50px"}).slideUp().slideDown()              
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .mainbox{
+            height: 150px;
+            -border: 1px solid black;
+        }
+        .box1{
+            background-color: red;
+            font-size: 40px;
+            height: 150px;
+            width: 150px;
+            color: white;
+        }
+        .box2{
+            background-color: rgb(29, 8, 85);
+            font-size: 40px;
+            height: 150px;
+            width: 150px;
+            color: white;
+        }
+        .box3{
+            background-color: rgb(144, 7, 151);
+            font-size: 40px;
+            height: 150px;
+            width: 150px;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="mainbox d-flex m-5 ">
+        <div class="box1 change ms-3 text-center align-content-center rounded-5">
+            1
+        </div>
+        <div class="box2 ms-3 change text-center align-content-center rounded-5">
+            2
+        </div>
+        <div class="box3  change ms-3 text-center align-content-center rounded-5">
+            3
+        </div>
+    </div>
+
+    <button class="btn btn-primary rounded-4" id="btnch">Change Order</button>
+    <button class="btn btn-danger rounded-4" id="btncl">Clear Order</button>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnch").click(function(){
+                $(".box1").css({
+                    "order":"2"
+                })
+                $(".box2").css({
+                    "order":"3"
+                })
+                $(".box3").css({
+                    "order":"1"
+                })
+            })
+            $("#btncl").click(function(){
+                $(".change").css({
+                    "order":"initial"
+                })
+  
+            })
+        })
+    </script>
+</body>
+</html>

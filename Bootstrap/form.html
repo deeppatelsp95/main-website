@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Login Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .login-box{
+            max-width: 350px;
+        }
+        input:focus{
+            outline: 0;
+            box-shadow: none !important;
+            border-color: #dee2e6 !important;
+        }
+        
+    </style>
+</head>
+
+
+<body class="bg-light">
+
+    <form class="was-validated">
+    <div class="login-box shadow mx-auto mt-5 p-4 rounded-3 bg-white">
+        <img src="images/amazon logo.png" class="d-block mx-auto" width="150" alt="">
+        <h3 class="text-center mb-3 text-secondary">Login here</h3>
+
+        <div class="mb-2 form-floating">            
+            <input type="text" class="form-control form-control-lg" placeholder="">
+            <label class="form-label mb-1 text-secondary">Username</label>
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label mb-1 text-secondary">Password</label>
+            <input type="password" class="form-control form-control-lg">
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label mb-1 text-secondary">Email</label>
+            <div class="input-group">                
+                <input type="email" class="form-control border-end-0">
+                <span class="input-group-text bg-white"><i class="fa-regular fa-envelope"></i></span>
+            </div>            
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label mb-1 text-secondary">Username</label>
+            <div class="">                
+                <input type="email" class="form-control" required>
+                <!-- <span class="input-group-text bg-white"><i class="fa-regular fa-envelope"></i></span> -->
+                <div class="valid-feedback">Correct !</div>
+                <div class="invalid-feedback">Please enter username</div>
+            </div>            
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label mb-1 text-secondary">Select City</label>
+            <select class="form-select">                
+                <option>Mehsana</option>
+                <option selected>Kadi</option>
+                <option>Ahmedabad</option>
+            </select>
+        </div>
+        
+
+        <a href="#" class="float-end text-decoration-none small">Forgot password ?</a>
+
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input type="radio" name="gender" value="male" class="form-check-input">
+                <label class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="gender" value="female" class="form-check-input">
+                <label class="form-check-label">Female</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Reading</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Playing</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Active</label>
+            </div>
+        </div>
+
+        <div>
+            <label class="form-label mb-1">Price Range</label>
+            <input type="range" class="form-range">
+        </div>
+
+        <button class="btn btn-danger w-100 mt-3">Submit</button>
+
+    </div>
+
+</form>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

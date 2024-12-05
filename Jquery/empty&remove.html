@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Empty & Remove Action</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="m-5">
+
+    <button class="btn btn-primary" id="empty">Empty</button>
+    <button class="btn btn-info" id="remove">Remove</button>
+
+    <div class="box border p-3 mt-3 rounded">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nihil quae, voluptatibus labore perspiciatis illo, mollitia esse vel minima maxime nemo eum! Sequi reprehenderit beatae ex tempore modi recusandae qui error minima, blanditiis labore illum suscipit. Deleniti sed earum iusto quasi nisi, dolor, totam velit numquam veritatis ut dolorum voluptatibus sapiente accusantium reprehenderit odio quos, perspiciatis neque consectetur omnis laborum quidem suscipit? Voluptatum laboriosam sunt, alias velit nihil commodi. Consequatur ipsum delectus repellendus assumenda quas, praesentium pariatur? Culpa, asperiores excepturi? Tenetur illo, est facilis esse accusantium assumenda quos? Ducimus, voluptatibus asperiores neque molestiae natus blanditiis impedit odio beatae tempore provident?
+
+        <p>Hello</p>
+    </div>
+    
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#empty").click(function(){
+                $(".box").empty()
+            })
+            $("#remove").click(function(){
+                $(".box").remove()
+            })
+        })
+    </script>
+</body>
+</html>

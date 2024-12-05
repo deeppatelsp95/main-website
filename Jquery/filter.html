@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Filter Jquery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            width: 150px;height: 150px;
+            border: 1px solid red;
+        }
+
+        div{
+            border: 1px solid red;
+            margin-block: 15px;padding: 15px;
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+    <button class="btn btn-primary" id="frst">First</button>
+    <button class="btn btn-primary" id="lst">Last</button>
+    <button class="btn btn-primary" id="eq">Equation</button>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <div>
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ut ad non, quaerat dolorem ex iste cum. Reprehenderit, laboriosam nesciunt, vero dicta dignissimos mollitia eius eum architecto sint esse cum!</p>
+    </div>
+
+    <div>
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ut ad non, quaerat dolorem ex iste cum. Reprehenderit, laboriosam nesciunt, vero dicta dignissimos mollitia eius eum architecto sint esse cum!</p>
+    </div>
+
+    <div>
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ut ad non, quaerat dolorem ex iste cum. Reprehenderit, laboriosam nesciunt, vero dicta dignissimos mollitia eius eum architecto sint esse cum!</p>
+    </div>
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#frst").click(function(){
+                $("div").first().css("background-color","yellow")
+            })
+            $("#lst").click(function(){
+                $("div").last().css({"background-color":"red","color":"white"})
+            })
+            $("#eq").click(function(){
+                $("p").eq(4).css({"color":"green"})
+            })
+        })
+    </script>
+</body>
+</html>

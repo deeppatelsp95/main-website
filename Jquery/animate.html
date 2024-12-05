@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Animate Using JS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            width: 200px;height: 200px;background-color: red;
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+    <button class="btn btn-primary mb-3" id="animate">Animate</button>
+    <div class="box">
+        
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#animate").click(function(){
+                $(".box").animate({
+                    // "margin-left":"200px",
+                    // "opacity":"0.1",
+                    // "borderRadius":"50%",
+                    // "width":"300px",
+                    //"height":"toggle",
+                })
+            })
+        })
+    </script>
+</body>
+</html>

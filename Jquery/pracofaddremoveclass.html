@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of add remove and toggle class</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            background-color: green;
+            margin-top: 50px;
+            -border-radius: 20px;
+        }
+        .new{
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body class="m-4">
+    
+    <button class="btn btn-primary" id="addcls">Add class</button>
+    <button class="btn btn-warning" id="rmvcls">Remove class</button>
+    <button class="btn btn-danger" id="tglcls">Toggle class</button>
+
+    <div class="box" style="width: 200px; height: 200px;">
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#addcls").click(function(){
+                $(".box").addClass("new")
+                $(".box").animate({
+                    marginLeft:"400px"
+                    
+                })
+            })
+            $("#rmvcls").click(function(){
+                $(".box").removeClass("new")
+                $(".box").animate({
+                    marginLeft:"0px",
+                   
+                })
+               
+            })
+            $("#tglcls").click(function(){
+                $(".box").toggleClass("new")
+            })
+        })
+    </script>
+</body>
+</html>

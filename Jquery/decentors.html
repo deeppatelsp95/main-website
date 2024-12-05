@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Decentors</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            border: 2px solid #ddd;
+            padding: 15px;
+        }
+        .box *{
+            border: 2px solid #ddd;
+            margin: 10px;padding: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body class="m-5">
+
+    <div class="box">
+        <div>
+            <p>
+                <span>First</span>
+            </p>
+        </div>
+        <div>
+            <p>
+                <span>Second</span>
+            </p>
+        </div>
+    </div>
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").find("div").css("border-color","red")
+        })
+    </script>
+</body>
+</html>

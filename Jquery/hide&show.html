@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Hide/Show</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            -display: none;
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+    <button class="btn btn-primary" id="hide">Hide</button>
+    <button class="btn btn-success" id="show">Show</button>
+    <button class="btn btn-info" id="tgl">Toggle</button>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus pariatur doloribus mollitia, temporibus soluta reprehenderit iste accusantium praesentium rem velit eaque perferendis hic voluptas eum recusandae veritatis repellendus veniam laudantium suscipit libero autem vitae ullam. Non repudiandae ab fuga accusantium dignissimos dolor nostrum aut rerum, corporis delectus. Id voluptates minus, perferendis a nostrum accusamus quia voluptatum fugiat deserunt laboriosam cum quibusdam beatae magnam saepe facere laudantium provident consequuntur iste animi! Cupiditate pariatur consequatur voluptatum blanditiis odio facere eius aliquid alias doloribus minus sunt adipisci unde iusto, ullam, nemo quo fugit laboriosam neque. Optio nihil ducimus iure rerum. Voluptate, nulla corporis!
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $(".box").hide()
+            })
+            $("#show").dblclick(function(){
+                $(".box").show("slow")
+            })
+            $("#tgl").click(function(){
+                $(".box").toggle()
+            })
+        })
+    </script>
+</body>
+</html>

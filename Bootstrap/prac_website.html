@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: linear-gradient( to right, #7D0796, #CE1E81);
+        }
+
+        .card{
+            margin-inline: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0   0   5px gray;
+            transition: all 1.2s;
+            height: 380px;
+            
+
+            &:hover{
+                scale: 1.1;
+                z-index: 1;
+                transition: all 1.2s;
+                box-shadow: 0 0 5px rgb(233, 58, 87);
+                
+            }
+        }
+        .ecommerce-tab .card img{
+            object-fit: contain;
+            width: 100%;
+            height: 250px;
+        }
+        .ecommerce-tab .card h5{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .demo.nav-tabs .nav-link{
+            -color: #ffffff;
+            -background-color: #f0f0f0;
+            -border: 1px solid purple;
+           -border-radius: 50px;
+           color: rgb(255, 255, 255);
+           
+        }
+        .demo.nav-tabs{
+            border-bottom: 0;
+        }
+        .demo.nav-tabs .nav-link.active, 
+        .demo.nav-tabs .show>.nav-link{
+            -background-color: aqua;
+            border-bottom: 3px solid rgb(32, 129, 129);
+            color: darkcyan;
+            font-size: 20px;
+            box-shadow: 0 3px 5px gray;
+            -background: url(images/lovepik-gradient-matte-texture-background-image_401636034.jpg);
+            
+        
+        }
+        
+        .logo img{
+            width: 300px;
+            position: absolute;
+            top: 20px;
+           left: 20px;
+            
+        }
+        .head img{
+            width: 100%;
+        }
+        .demo,ul li{
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="head">
+        <img src="images/FDFO_PC_Header_1500x300_newww.gif" alt="">
+    </div>
+    <div class="logo">
+        <img src="images/amazon logo.png" alt="">
+    </div>
+    
+    <ul class="nav nav-tabs gap-2 demo mb-3">
+        <li class="nav-item"><a href="#all" class="nav-link active" data-bs-toggle="tab">all products</a></li>
+        <li class="nav-item"><a href="#electronics" class="nav-link" data-bs-toggle="tab">electronics</a></li>
+        <li class="nav-item"><a href="#decoration" class="nav-link" data-bs-toggle="tab">decoration</a></li>
+        <li class="nav-item"><a href="#clothes" class="nav-link" data-bs-toggle="tab">clothes</a></li>
+    </ul>
+
+
+    <div class="tab-content ecommerce-tab">
+        <div class="tab-pane active" id="all">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card p-3 ">
+                        <img src="images/chair.jpeg" class="mb-4" alt="">
+                        <h5 class="mb-2">ErgoSmart Plus Office Chair (Onyx)</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹8452</span> <del>₹12999</del><b class="text-success"> 23% off</b></span>
+                    </div>    
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/cupboard.jpeg" class="mb-4" alt="">
+                        <h5 class="mb-2">Nilkamal Freedom Mini Medium FMM Compact Plastic Cabinet for Storage|Space & Clothes Organizer|Shelves|Cupboard|Almari|Wardrobe|Living Room| for Home Kitchen & Office (Weather Brown & Biscuit)</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹8452</span> <del>₹12999</del><b class="text-success"> 23% off</b></span>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/bad.webp" class="mb-4" alt="">
+                        <h5 class="mb-2">GODREJ INTERIO Bed, EWA King Size Engineered Wood Bed with Box Storage, 1-Year Warranty, Brown, Particle Board</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹18470</span> <del>₹58000</del><b class="text-success"> 63% off</b></span>
+                    </div>
+                </div>  
+                
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/51vNMv6Ua-L._SX569_.jpg" class="mb-4" alt="">
+                        <h5 class="mb-2">Aquaguard Sure Delight NXT 6-Stage Water Purifier | RO+UV+UF Tech | Free Service Plan worth ₹2000 | India’s #1 Water Purifier | Suitable for Borewell, Tanker & Municipal Water</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹8499</span> <del>₹18000</del><b class="text-success"> 53% off</b></span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/motherboard.jpg" class="mb-4" alt="">
+                        <h5 class="mb-2">MSI MAG B650 Tomahawkr</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹24816</span> <del>₹45999</del> 43% off</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/model cloth.jpg" class="mb-4" alt="">
+                        <h5 class="mb-2">Men's Solid Full Sleeves T-Shirt</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹999</span> <del>₹1866</del> 43% off</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/laptop.webp" class="mb-4" alt="">
+                        <h5 class="mb-2">Acer Nitro V Gaming Laptop 13th Gen Intel Core i5-13420H with RTX 4050 Graphics 6GB VRAM, 144Hz Display (16GB DDR5/1TB SSD/Windows 11 Home/Wi-Fi 6),15.6"(39.6cms) FHD ANV15-51</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹78900</span> <del>₹92000</del> 15% off</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/decoration light.webp" class="mb-4" alt="">
+                        <h5 class="mb-2">NIYAMAX 35 Feet 36 Led String Serial Lights, Copper Wire LED Decorative String Fairy Rice Lights for Indoor, Outdoor, Decoration, Festival, Party, Wedding, Garden, Lawn (Multicolor)(Pack of 1)</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹99</span> <del>₹999</del> 90% off</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="electronics">
+            <div class="row"> 
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/51vNMv6Ua-L._SX569_.jpg" class="mb-4" alt="">
+                        <h5 class="mb-2">Aquaguard Sure Delight NXT 6-Stage Water Purifier | RO+UV+UF Tech | Free Service Plan worth ₹2000 | India’s #1 Water Purifier | Suitable for Borewell, Tanker & Municipal Water</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹8499</span> <del>₹18000</del> 53% off</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/motherboard.jpg" class="mb-4" alt="">
+                        <h5 class="mb-2">MSI MAG B650 Tomahawkr</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹24816</span> <del>₹45999</del> 43% off</span>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/laptop.webp" class="mb-4" alt="">
+                        <h5 class="mb-2">Acer Nitro V Gaming Laptop 13th Gen Intel Core i5-13420H with RTX 4050 Graphics 6GB VRAM, 144Hz Display (16GB DDR5/1TB SSD/Windows 11 Home/Wi-Fi 6),15.6"(39.6cms) FHD ANV15-51</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹78900</span> <del>₹92000</del> 15% off</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane" id="decoration">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/cupboard.jpeg" class="mb-4" alt="">
+                        <h5 class="mb-2">Nilkamal Freedom Mini Medium FMM Compact Plastic Cabinet for Storage|Space & Clothes Organizer|Shelves|Cupboard|Almari|Wardrobe|Living Room| for Home Kitchen & Office (Weather Brown & Biscuit)</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹8452</span> <del>₹12999</del> 23% off</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/bad.webp" class="mb-4" alt="">
+                        <h5 class="mb-2">GODREJ INTERIO Bed, EWA King Size Engineered Wood Bed with Box Storage, 1-Year Warranty, Brown, Particle Board</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹18470</span> <del>₹58000</del> 63% off</span>
+                    </div>
+                </div>  
+
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/decoration light.webp" class="mb-4" alt="">
+                        <h5 class="mb-2">NIYAMAX 35 Feet 36 Led String Serial Lights, Copper Wire LED Decorative String Fairy Rice Lights for Indoor, Outdoor, Decoration, Festival, Party, Wedding, Garden, Lawn (Multicolor)(Pack of 1)</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹99</span> <del>₹999</del> 90% off</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="clothes">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card p-3">
+                        <img src="images/model cloth.jpg" class="mb-4" alt="">
+                        <h5 class="mb-2">Men's Solid Full Sleeves T-Shirt</h5>
+                        <span class="h6 text-secondary"><span class="h4 text-dark">₹999</span> <del>₹1866</del> 43% off</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

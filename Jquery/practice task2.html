@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice task2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .bulb{
+            height: 400px;
+            width: 300px;
+            -border: 1px solid black;
+            margin: 50px auto;
+            
+        }
+        .bulb .off{
+          
+            filter: grayscale(100%);
+            
+        }
+        #on{
+            margin-left: 100px;
+        }
+        #on{
+            background-color: antiquewhite;
+        }
+        body{
+            background-image: radial-gradient(gray,black);
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="bulb">
+        <img src="images/bulb.png" class="off" alt="" width="300px">
+        
+    </div>
+
+    <button class="btn rounded-3" id="on">ON</button>
+    <button class="btn btn-secondary rounded-3" id="off">OFF</button>
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#on").click(function(){
+                $(".off").css({"filter": "grayscale(0%)","filter": "drop-shadow(0px -40px 100px yellow)"})
+                $("body").css("background-image", "radial-gradient( gray, black)")
+                
+            })
+            $("#off").click(function(){
+                $(".off").css("filter", "grayscale(100%)")
+                $("body").css("background-image", "radial-gradient( gray, black)")
+            })
+        })
+    </script>
+</body>
+</html>

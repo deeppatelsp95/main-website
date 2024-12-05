@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice of animate</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+        p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body class="m-5">
+
+    <button class="btn btn-primary mb-3" id="animate">Animate</button>
+    <p>hello world</p>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("#animate").click(function(){
+        //         $(".box").animate({
+        //             "marginLeft":"200px",
+        //             "borderRadius":"50%",
+        //         })
+        //     })
+        // })
+
+        // callback function//
+        // $(document).ready(function(){
+        //     $("#animate").click(function(){
+                
+        //         $(".box").hide(function(){
+        //            alert("box is hidden")
+        //         })
+
+        //     })
+        // })
+
+
+        // chaining ///
+        $(document).ready(function(){
+            $("#animate").click(function(){
+                $("p").css({"color":"red","fontSize":"50px"}).slideToggle()
+            })
+        })
+
+    </script>
+</body>
+</html>

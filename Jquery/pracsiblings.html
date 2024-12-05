@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of siblings</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="m-3">
+    
+    <button class="btn btn-secondary" id="two">H2</button>
+    <button class="btn btn-secondary" id="three">H3</button>
+    
+    
+    <div class="box">
+        <h2>Header 2  H2</h2>
+        <h3>Header 3  H3</h3>
+        <h4>Header 4  H4</h4>
+        <h5>Header 5  H5</h5>
+        <h6>Header 6  H6</h6>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        
+        $(document).ready(function(){
+            $("#two").click(function(){
+                $("h2").siblings().css({
+                    "color":"red"
+                }).animate({
+                    "font-size":"50px"
+                })
+            })  
+        })
+        $(document).ready(function(){
+            $("#three").click(function(){
+                $("h3").siblings().css({
+                    "color":"red"
+                }).animate({
+                    "font-size":"50px"
+                })
+            }) 
+        })
+        
+    </script>
+</body>
+</html>

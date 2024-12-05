@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="m-5">
+    
+    <!-- ///get jquery/// -->
+    <!-- <button class="btn btn-primary" id="gettext">Get Text</button>
+    <button class="btn btn-secondary" id="gethtml">Get Html</button>
+    <button class="btn btn-warning" id="getval">Get Value</button>
+    <button class="btn btn-danger" id="getattar">Get Attribute</button> -->
+    <!-- ///set jquery/// -->
+    <button class="btn btn-primary" id="settext">Set Text</button>
+    <button class="btn btn-secondary" id="sethtml">Set Html</button>
+    <button class="btn btn-warning" id="setval">Set Value</button>
+    <button class="btn btn-danger" id="setattar">Set Attribute</button>
+
+    <p>
+        India is <b>my country</b>.<span>hello from india</span>
+    </p>
+
+    <input type="text" value="horizon">
+
+    <a href="https://www.flipkart.com/">Flipkart</a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        //// get jquery ////
+        // $(document).ready(function(){
+        //     $("#gettext").click(function(){
+        //         alert("text :" + $("p").text())
+        //     })
+        //     $("#gethtml").click(function(){
+        //         alert("HTMl :" + $("p").html())
+        //     })
+        //     $("#getval").click(function(){
+        //         alert(" Value :" + $("input").val())
+        //     })
+        //     $("#getattar").click(function(){
+        //         alert(" Attribute :" + $("a").attr())
+        //     })
+        // })
+
+        // set jquery 
+
+        $(document).ready(function(){
+            $("#settext").click(function(){
+                $("p").text(" <b> good afternoon </b>")
+            })
+            $("#sethtml").click(function(){
+                $("p").html(" <i> good morning </i>")
+            })
+            $("#setval").click(function(){
+                $("input").val("rainbow horizon")
+            })
+            $("#setattar").click(function(){
+                $("a").attr("href", "https://tcpindia.in/")
+            })
+        })
+    </script>
+</body>
+</html>

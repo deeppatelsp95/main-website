@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="m-5">
+
+    <button class="btn btn-primary" id="gettxt">Get Text</button>
+    <button class="btn btn-success" id="gethtml">Get HTML</button>
+    <button class="btn btn-info" id="getval">Get Value</button>
+    <button class="btn btn-warning" id="getattr">Get Attribute</button>
+    
+
+    <p>
+        India is my <b>country</b>.How <span>are</span> you today ?
+    </p>
+
+    <input type="text" value="rtyuio">
+
+    <a href="https://www.google.com/">Flipkart</a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#gettxt").click(function(){
+                alert("Text :" + $("p").text())
+            })
+            $("#gethtml").click(function(){
+                alert("HTML :" + $("p").html())
+            })
+            $("#getval").click(function(){
+                alert("Value :" + $("input").val())
+            })
+            $("#getattr").click(function(){
+                alert("Attribute : " + $("a").attr("href"))
+            })
+        })
+    </script>
+</body>
+</html>

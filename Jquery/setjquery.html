@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="m-5">
+
+    <button class="btn btn-primary" id="settxt">Set Text</button>
+    <button class="btn btn-success" id="sethtml">Set HTML</button>
+    <button class="btn btn-info" id="setval">Set Value</button>
+    <button class="btn btn-warning" id="setattr">Set Attribute</button>
+    
+
+    <p>
+        India is my <b>country</b>.How <span>are</span> you today ?
+    </p>
+
+    <input type="text" value="XYZ">
+
+    <a href="https://www.google.com/">Flipkart</a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#settxt").click(function(){
+                $("p").text("<b>Good Morning !</b>")
+            })
+            $("#sethtml").click(function(){
+                 $("p").html("<i>Good Morning !</i>")
+            })
+            $("#setval").click(function(){
+                $("input").val("Deep Patel")
+            })
+            $("#setattr").click(function(){
+                 $("a").attr("href","https://www.flipkart.com/")
+            })
+        })
+    </script>
+</body>
+</html>

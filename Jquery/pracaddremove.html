@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parctice of empty and remove</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="m-4">
+    
+    <button class="btn btn-primary" id="empty">Empty</button>
+    <button class="btn btn-secondary" id="remove">Remove</button>
+
+    <div class="box border p-3 rounded mt-3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dignissimos vitae similique culpa nostrum aut eos illum ab inventore amet ullam at maxime perferendis quas, quam voluptatem minima mollitia iste. Quos laborum perferendis odio ducimus expedita. Id assumenda reprehenderit, cupiditate sapiente perspiciatis qui aliquam. Eius esse aut, iste quasi maxime tempora quaerat cum porro praesentium facilis perspiciatis inventore commodi earum, reiciendis nam. Corporis dolores quod amet suscipit quaerat explicabo atque velit placeat doloribus adipisci, optio porro iure. Ipsa repellat, recusandae fugit assumenda ad ea labore, praesentium animi at inventore modi. Itaque alias laudantium corporis incidunt quae omnis sunt sint enim!
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#empty").click(function(){
+                $(".box").empty()
+            })
+            $("#remove").click(function(){
+                $(".box").remove()
+            })
+        })
+    </script>
+</body>
+</html>

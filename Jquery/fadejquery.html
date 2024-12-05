@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Fade Jquery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            display: none;
+        }
+    </style>
+</head>
+<body class="m-5">
+
+    <button class="btn btn-primary" id="fdin">Fade In</button>
+    <button class="btn btn-primary" id="fdout">Fade Out</button>
+    <button class="btn btn-primary" id="fdtgl">Fade Toggle</button>
+    <button class="btn btn-primary" id="fdto">Fade To</button>
+    
+    <div class="box bg-success text-white p-3 mt-3 rounded">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit error vitae, cum maiores recusandae quae magnam pariatur adipisci sint iste a sunt voluptatibus dolorum nisi ducimus? Odio quis sit hic laborum soluta error cumque quibusdam aliquid veritatis eveniet, suscipit non voluptatem nam? Ullam in tempora neque culpa rem possimus tenetur repellendus animi labore reiciendis quaerat dolore ab harum, porro dolorum ea nobis facere fugit quos atque? Velit obcaecati repudiandae at explicabo harum deleniti neque assumenda laborum nobis inventore aut doloremque porro impedit in maxime laboriosam nostrum distinctio illum, aliquid dolorum! Aliquid neque cupiditate culpa cum, tenetur ratione eligendi voluptatibus optio.
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fdin").click(function(){
+                $(".box").fadeIn()
+                $(".box").fadeTo("slow",0.1)
+            })
+            $("#fdout").click(function(){
+                $(".box").fadeOut()
+            })
+            $("#fdtgl").click(function(){
+                $(".box").fadeToggle()                
+            })
+            // $("#fdto").click(function(){
+            //     $(".box").fadeTo("slow",0.1)
+            // })
+        })
+    </script>
+</body>
+</html>

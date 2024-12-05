@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of acncestors</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .box *{
+            border: 1px solid gray;
+            padding: 15px;
+            margin: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+    <div class="box">
+        <div>
+            <ul>
+                <li>
+                    <span>First</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                <span>Second</span>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        // **************Ancenstors*************
+        // one parent only
+        // $(document).ready(function(){
+        //     $("span").parent().css("border","2px solid green")
+        // })
+
+        // for all parents
+        // $(document).ready(function(){
+        //     $("span").parents().css("border","2px solid green")
+        // })
+
+        // span to body all parents
+        // $(document).ready(function(){
+        //     $("span").parentsUntil("body").css("border","2px solid red")
+        // })
+
+
+        // ************Decentors************
+        // $(document).ready(function(){
+        //     $("div").children().css("border","1px solid red")
+        // })
+
+        $(document).ready(function(){
+            $("div").find("li").css("border","1px solid red").animate({
+                "margin-left":"80%",
+                "font-size":"30px",
+            })
+        })
+    </script>
+</body>
+</html>

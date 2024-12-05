@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of filteration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 15px;
+            margin-block: 15px;
+        }
+        p{
+            display: inline;
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body class="m-4">
+    
+    <button class="btn btn-primary" id="frst">First</button>
+    <button class="btn btn-primary" id="last">Last</button>
+    <button class="btn btn-primary" id="eq">Equation</button>
+
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+    <p>paragraph 4</p>
+    <p>paragraph 5</p>
+
+    <div>
+        <h1>india</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis eligendi atque praesentium. Distinctio tempora odit eos consectetur? Pariatur cumque, obcaecati reprehenderit sit error numquam quia, distinctio ducimus atque in consequuntur doloribus ut deserunt dolorem vero aliquid quasi odio aliquam. Pariatur nulla corporis laudantium debitis sit omnis, voluptatem blanditiis molestiae.</p>
+    </div>
+
+    <div>
+        <h1>Hello</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit aspernatur nobis pariatur ipsam eius autem tenetur consequatur labore cum distinctio quisquam, dicta expedita suscipit, numquam rem quia? At fuga temporibus dolore autem, quia sint, iure fugit libero amet exercitationem ea est vel magnam porro soluta voluptas veniam repellendus? Unde, rerum.</p>
+    </div>
+
+    <div>
+        <h1>india</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eaque a, molestiae quam eius animi, aliquam, in facere repellendus id consequuntur debitis sunt dolore fugiat laborum! Debitis soluta enim quos. Labore voluptatibus dolores eveniet facere aut, placeat culpa perferendis explicabo praesentium vero sequi voluptatem repellat ratione nihil laboriosam sunt temporibus?</p>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#frst").click(function(){
+                $("div").first().css({"background-color":"red","color":"white"})
+            })
+            $("#last").click(function(){
+                $("div").last().css("background-color","yellow")
+            })
+            $("#eq").click(function(){
+                $("p").eq(2).css({"color":"green","background-color":"yellow"})
+            })
+        })
+    </script>
+</body>
+</html>

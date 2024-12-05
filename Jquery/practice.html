@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of hide and show</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head> 
+<body class="m-5">
+    
+    <button class="btn btn-primary" id="hide">hide</button>
+    <button class="btn btn-success" id="show">show</button>
+    <button class="btn btn-info" id="tgl">toggle</button>
+    <button class="btn btn-danger" id="stop">slide stop</button>
+
+    <div class="box text-white mt-3 text-bg-dark overflow-hidde rounded">
+        <div class="p-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet natus eveniet aliquid ad incidunt ex quidem, iusto nam, doloribus illo aperiam nihil nostrum inventore sapiente voluptatum deserunt animi sint beatae eius molestias sit expedita laborum, culpa veritatis? Molestiae, porro repudiandae. Id nihil deserunt hic. Sit numquam officia dolore dicta facilis atque animi id perspiciatis libero. Omnis nam ab quia corporis, culpa, ex ratione assumenda beatae aperiam, totam ea? Cumque id architecto assumenda cupiditate consectetur culpa rem vero qui debitis officia voluptas, laudantium ducimus, repudiandae pariatur esse facere quisquam quibusdam exercitationem nulla quidem placeat amet est deleniti non. Sequi, dolore nam.
+    </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $(".box").slideUp(1200)
+            })
+            $("#show").click(function(){
+                $(".box").slideDown(1200)
+            })
+            $("#tgl").click(function(){
+                $(".box").slideToggle()
+            })
+            $("#stop").click(function(){
+                $(".box").stop()
+            })
+        })
+    </script>
+</body>
+</html>

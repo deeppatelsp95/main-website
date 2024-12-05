@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of CSS Jquery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            width: 150px;height: 150px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body class="m-5">
+    
+    <button class="btn btn-primary" id="cssjquery">CSS Jquery</button>
+    <div class='box mt-3'>
+        1
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#cssjquery").click(function(){
+                $(".box").css({
+                    "background-color":"red",
+                    "margin-left":'150px',
+                    "opacity":1,
+                    "font-size":"55px"
+                })
+            })
+        })
+    </script>
+</body>
+</html>
